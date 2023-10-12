@@ -1,0 +1,694 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+} 
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    color: #00296b;
+    grid-template-rows: 0.6fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr; 
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;  
+     /* grid-template-rows: 0.6rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem; 
+     grid-template-columns: 1rem, 1rem, 1rem, 1rem, 1rem;   */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e5e5e5
+}
+
+/* #navbar {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2em;
+}  */
+
+#navbar {
+    grid-row: 1/2;
+    grid-column: 1/7;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.7em;
+    background-color: #e5e5e5;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid silver; 
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    
+   
+} 
+
+#navbar span{
+    padding-left: 0.2em; 
+    padding-right: 0.2em;
+}
+
+/* #HomePage{
+    flex: 1; 
+    text-align: center; 
+} */
+
+
+#Introduction  
+{
+    font-size: 28px;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: 3.25em;
+    display: flex;
+    justify-content: center;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+    
+}
+
+#Picture_Myself  
+{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-left: 5.75em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+    
+}
+
+#Picture_Myself img 
+{
+    /* grid-row: 3/4;
+    grid-column: 2/5; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url("/Users/diegoguzman/Downloads/a1-personal-website-DiegoGuz10/Diego_Guzman_Picture.jpg"); */
+    background-size: cover; 
+    margin-bottom: 0.4em;
+    max-width: 20vmax;
+    max-height: 20vmax;
+    border-radius: 15px;
+}
+
+
+#My_Interests_Title  
+{
+    font-size: 28px;
+    grid-row: 2/3;
+    grid-column: 4/7;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: 5em;
+    margin-right: 3em;
+    display: flex;
+    justify-content: center;
+    padding-right: 2em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+
+    
+    
+    
+}
+
+#My_Interests 
+{
+    grid-row: 3/4;
+    grid-column: 4/7;
+    font-size: 20px;
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start; */
+    /* justify-content: flex-end; */
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+    padding-right: 0.3em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+
+#My_Interests ul{
+    /* align-self: flex-start; */
+    list-style-position: inside
+}
+
+
+#Current_Work_Title{
+    grid-row: 4/5;
+    grid-column: 1/7;
+    font-size: 28px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 0.5em; */
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+
+#ResearchPicture 
+{
+    grid-row: 5/8;
+    grid-column: 4/7;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 1em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+
+#ResearchPicture img
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url("/Users/diegoguzman/Downloads/a1-personal-website-DiegoGuz10/Research_Picture.png"); */
+    background-size: cover;
+    margin-bottom: 0.5em;
+    max-width: 25vmax;
+    max-height: 25vmax;
+    border-radius: 15px;
+}
+
+#STARPicture 
+{
+    grid-row: 5/8;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    margin-left: 6em;
+    margin-right: 0.5em;
+    margin-top: 0.7em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+
+#Current_Work_Paragraph{
+    grid-row: 9/15;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+/* 
+#Current_Work_P em{
+    grid-row: 9/15;
+    grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+} */
+
+
+
+/* #Current_Work_P p{
+    grid-row: 9/15;
+    grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+} */
+#Current_Work_Button{
+    grid-row: 15/17;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+
+    /* background-color: #FF5733; 
+    border-radius: 25%; 
+    font-size: 20px; 
+    padding: 7px; 
+    border: 0.1px solid gray; 
+    color: #F9EBDE; */
+}
+
+#Current_Project{
+    grid-row: 17/18;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+    font-size: 28px;
+
+    /* animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s; */
+    
+}
+
+#Email_Project{
+    grid-row: 18/21;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 1.5em;
+    margin-left: 3em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+    /* border-radius: 15px; */
+}
+
+#Email_Project_Video{
+    width: 65%;
+    height: 300px;
+    object-fit: cover;
+    z-index: -100;
+    border-radius: 15px;
+    
+    
+    
+}
+#Email_Project p{
+    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+#Hotel_Website_Project{
+    grid-row: 18/21;
+    grid-column: 4/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top:  1.5em;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+
+#Hotel_Website_Project_Picture{
+    overflow: hidden;
+
+    /* width: 100%;
+    height: auto; */
+
+    max-height:590px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    /* z-index: -100; */
+    
+    
+}
+#Hotel_Website_Project p{
+    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    /* color: blue;
+    background-color: #FF5733; */
+}
+
+
+#Current_Work_Button form button{
+    /* grid-row: 15/17;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em; */
+    text-decoration: none;
+    background-color: #FF5733; 
+    border-radius: 25%; 
+    font-size: 20px; 
+    padding: 7px; 
+    border: 0.1px solid silver; 
+    color: #F9EBDE;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.10s;
+}
+/* #Current_Work{
+    grid-row: 4/15;
+    grid-column: 1/6;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5em;
+    margin-top: 0.7em;
+
+    animation-name: slidefromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+} */
+
+
+#Current_Work h2
+{
+    
+    align-self: center;
+} 
+
+/* #STARPicture 
+{
+    grid-row: 11/15;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.7em;
+
+    animation-name: slidefromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+} */
+
+#STARPicture img
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url("/Users/diegoguzman/Downloads/a1-personal-website-DiegoGuz10/Research_Picture.png"); */
+    background-size: cover;
+    margin-bottom: 0.5em;
+    max-width: 100vmax;
+    max-height: 100vmax;
+    border-radius: 15px;
+}
+
+/* #Current_Work button{ */
+    
+    /* background-color: #FF5733; */
+    /* margin-top: 0.2em; */
+    /* margin-left: 50px; */
+    /* border-radius: 25%; */
+    /* font-size: 20px; */
+    /* padding: 7px; */
+    /* border: 0.1px solid gray; */
+    /* color: #F9EBDE; */
+    
+/* } */
+
+#Current_Work_Button form button:hover{
+    background-color: #5dbea3;
+    color: #815854;
+}
+
+#Current_Work_Paragraph a :hover{
+    color: #FF5733;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+@media screen and (max-width: 355px){
+    #Introduction  
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1068px) and (min-width: 769px){
+    #Introduction  
+    {
+        /* color: #815854;  */
+        margin-left: 5em;
+    }
+    #Picture_Myself   
+    {
+        margin-left: 5em;
+    }
+
+    #Picture_Myself img  
+    {
+        max-width: 25vmax;
+        max-height: 25vmax;
+    }
+
+    #My_Interests{
+        margin-left: 3em;
+    }
+
+    #ResearchPicture{
+        margin-top: 1.5em;
+    }
+
+    #ResearchPicture img{
+        max-width: 25vmax;
+        max-height: 25vmax;
+    }
+
+
+    #Hotel_Website_Project_Picture{
+        max-width: 40vmax;
+        max-height: 70vmax;
+    }
+
+    #Email_Project_Video{
+        max-width: 50vmax;
+        max-height: 25vmax;
+        object-fit: cover;
+        z-index: -100;
+        border-radius: 15px;
+        margin-top: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #Introduction  
+    {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        margin-left: 0em;  
+        
+    }
+    #Picture_Myself  
+    {
+        grid-row: 2/4;
+        grid-column: 1/7; 
+        margin: 0em;   
+    }
+    #My_Interests_Title  
+    {
+        grid-row: 4/5;
+        grid-column: 1/7;
+        padding: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-top: 1em;
+    }
+
+    #My_Interests 
+    {
+        grid-row: 5/6;
+        grid-column: 1/7;
+        font-size: 1em;
+        margin-bottom: 0em;
+    }
+
+    #Current_Work_Title{
+        grid-row: 6/7;
+        grid-column: 1/7;
+        margin-bottom: 0.3em;
+    }
+
+    #ResearchPicture 
+    {
+        grid-row: 7/9;
+        grid-column: 1/7;
+        margin-bottom: 2em;
+    }
+
+    #STARPicture 
+    {
+        grid-row: 9/11;
+        grid-column: 1/7;
+        margin: 0em;
+
+    }
+
+    #Current_Work_Paragraph{
+        grid-row: 11/15;
+        grid-column: 1/7;
+        font-size: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #Current_Work_Button{
+        grid-row: 15/18;
+        grid-column: 1/7;
+    }
+
+    #Current_Project{
+        grid-row: 18/19;
+        grid-column: 1/7;
+        margin-top: 1.2em;
+        margin-bottom: 0em;
+    }
+
+    #Email_Project{
+        grid-row: 19/20;
+        grid-column: 1/7;
+        font-size: 1em;
+        margin-left: 0em;
+        margin-top: 0em;
+        
+    }
+
+    #Hotel_Website_Project{
+        grid-row: 20/21;
+        grid-column: 1/7;
+        font-size: 1em;
+    }
+
+    #Email_Project p{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #Hotel_Website_Project a p{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #My_Interests 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 0em;
+    }
+
+    #Hotel_Website_Project_Picture{
+        max-width: 40vmax;
+        max-height: 70vmax;
+    }
+
+    #Email_Project_Video{
+        max-width: 50vmax;
+        max-height: 25vmax;
+        object-fit: cover;
+        z-index: -100;
+        border-radius: 15px;
+        margin-top: 1.5em;
+    }
+
+    #Picture_Myself img{
+        max-width: 32vmax;
+        max-height: 32vmax;
+    }
+
+    #ResearchPicture img
+    {
+        max-width: 30vmax;
+        max-height: 27vmax;
+        margin-top: 1.2em;
+    }
+
+    
+    /* #My_Interests_Title  
+    {
+        grid-row: 1/;
+        grid-column: 1/7;   
+    }
+
+    #My_Interests 
+    {
+        grid-row: 4/5;
+        grid-column: 1/7;
+    } */
+}
+/* #Current_Work_P em {
+    display: inline; 
+} */
+
+/* #Picture_Myself img {   
+
+    max-width: 30%;
+    max-height: 30%;
+} */
+
+/* #ResearchPicture img {
+    max-width: 50%;
+    max-height: 50%;
+} */
