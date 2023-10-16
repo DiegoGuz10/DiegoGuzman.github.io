@@ -1,0 +1,76 @@
+
+/* Universal Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+} 
+
+/* Body Styling */
+body{
+    box-sizing: border-box;
+    display: grid;
+    color: #00296b;
+    grid-template-rows: 0.2fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e5e5e5;
+    height: 100%; 
+    overflow-y: hidden;   
+}
+
+/* Navigation Bar Styling */
+#navbar {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.7em;
+    background-color: #e5e5e5;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid silver;
+} 
+
+#navbar span{
+    padding-left: 0.2em; 
+    padding-right: 0.2em;
+}
+
+/* Main Message Styling */
+#mainsection{
+    margin-top: 20em;
+    grid-row: 2/3;
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#mainsection h1{
+    margin-bottom: 0.5em;
+    font-size: 28px;
+}
+
+#mainsection p{
+    font-size: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#mainsection a :hover{
+    color: #FF5733;
+}
+
+/* Media Queries Styling*/
+@media screen and (max-width: 649px) {
+    #mainsection{
+        align-items: center; 
+    }
+
+    #mainsection p{
+        text-align: center;
+    }
+}
