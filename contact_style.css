@@ -78,7 +78,7 @@ form{
     margin-bottom: 3em;
 } 
  
-#contactForms button{
+#contactForms a{
     margin-top: 0.3em;
     align-self: center;
     font-size: 20px;
@@ -109,7 +109,7 @@ textarea{
     resize: none;
 }
 
-#contactForms form button{
+#contactForms form a{
     text-decoration: none;
     background-color: #FF5733; 
     border-radius: 25%; 
@@ -120,7 +120,7 @@ textarea{
     appearance: button;
 }
 
-#contactForms form button:hover{
+#contactForms form a:hover{
     background-color: #5dbea3;
     color: #815854;
 }
